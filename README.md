@@ -39,23 +39,15 @@
 
 ## 📌 진행 상황
 
-- ✅ 01_Variables 학습 완료
-- ✅ 02_Functions 학습 완료
-- ⏳ 03_Objects 학습 중...
+- ✅ THEME 5~ ing
 
 ## 📝 참고 자료
 
 - [모던 JavaScript Deep Dive](http://www.yes24.com/Product/Goods/92742567)
 - [MDN Web Docs](https://developer.mozilla.org/ko/)
 - [JavaScript.info](https://javascript.info/)
+- [PoiemaWeb](https://poiemaweb.com/)
 
 ## 💡 기여 방법
 
-이 저장소는 개인 학습용으로 운영되지만, 개선할 부분이 있다면 자유롭게 Issue를 남겨주세요! 😊
-
-## 📢 Contact
-
-궁금한 점이나 제안할 사항이 있다면 아래로 연락 주세요!
-
-- GitHub Issue
-- Email: choewonbin@example.com
+이 저장소는 최원빈 개인학습 저장용으로 운영
