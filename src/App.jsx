@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const att = ['흥민', '영희', '철수', '재석'];
+
+  const search = (args) => {
+    let ans = '';
+    // att.forEach((name) => (args === name ? (ans = args) : (ans = null)));
+
+    // console.log(ans);
+    // return ans;
+    const len = att.length;
+
+    for (let i = 0; i < len; i++) {
+      if (args === att[i]) {
+        ans = att[i];
+      }
+    }
+
+    return ans;
+  };
+
+  const avg = (arr, score) => {
+    let sum = 0;
+    const len = arr.length;
+    for (let i = 0; i < len; i++) {
+      sum += arr[i];
+    }
+    const average = sum / len;
+    const distance = score - average;
+    console.log(average);
+    console.log(distance);
+    if (distance > 0) {
+      return '평균이 낮아짐';
+    } else {
+      return '평균이 높아짐';
+    }
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div> {search('흥민')}</div>
+      <div> {avg([10, 20, 30, 40, 50], 40)}</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
