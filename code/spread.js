@@ -38,4 +38,5 @@ const person2 = {
 };
 
 //내가 person1 객체의 hi라는 함수를 너무 잘 만들었음.. 그래서 person2에도 쓰고싶음
+//
 person1.hi.apply(person2);
