@@ -54,6 +54,7 @@
 - ✅ 함수 업그레이딩 \_ Default Parameter & arguments(이건 거의 안쓰임)
 - ✅ rest Parameter (...rest 묶어버리는) 응용
 - ✅ Reference Data Type vs Primitive Data type
+- ✅ 객체지향 JS로 이해하기 (생성자,this,프로토타입,클래스 그리고 상속)
 
 ## 📝 참고 자료
 
@@ -61,8 +62,9 @@
 - [MDN Web Docs](https://developer.mozilla.org/ko/)
 - [JavaScript.info](https://javascript.info/)
 - [PoiemaWeb](https://poiemaweb.com/)
+- [CoddingApple] (https://codingapple.com/)
 
 ## 💡 창설 이유
 
-이 저장소는 최원빈 개인학습 저장용으로 운영 및 최원빈 직접 지필
+이 저장소는 최원빈 개인학습 저장용으로 운영 및 최원빈이가 직접 지필합니다.
 누구나 볼 수 있고 퍼가는것도 상관없습니다.

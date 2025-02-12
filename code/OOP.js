@@ -28,4 +28,52 @@ var 학생1 = new 기계();
 
 //내가 새로 만든 프로토타입 (유전자  이름 젠더)
 console.log(학생1.gender);
+
+//프로토타입은 객체 형태로만 잘 만들어주면 돼 (그러므로 함수타입도 만들어줘도 괜찮겠지.)
 학생1.speakLoud();
+
+//__proto__ 강제유전자 등록가능함. (강제 유전자 주입)
+
+var 부모 = { name: 'Kim' };
+var 자식 = {};
+
+자식.__proto__ = 부모;
+console.log(자식.name);
+//prototype chaining-> 만물의 어머니 확인하기  콘솔가서 proto 속성 확인해보셈
+
+//연습문제
+
+// var 학생2 = { name: 'Kim', age: 20 };
+// var 학생3 = { name: 'Park', age: 21 };
+// var 학생4 = { name: 'Lee', age: 22 };
+
+function student(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayHi = function () {
+    console.log('hi 나는' + this.name + '임');
+  };
+}
+
+//기계로 뽑을때 인스턴스 뽑을때 new 쓰셈
+var 학생4 = new student('강아지', 20);
+학생4.sayHi();
+
+var arr = [1, 2, 3];
+
+//arr에 있는 3이란 값을 제거하는 유용한 함수를 만들어보자. 이 함수는 모든 array에 추가할거임
+
+//프로토타입(유전자)에 추가한 메서드는 this를 무조건 넣어야한다 는 아님
+//그러나, 인스턴스와 관련한 메서드 아래와 같은 remove3
+Array.prototype.remove3 = function () {
+  this.forEach((args, index) => {
+    if (args === 3) {
+      //원본 유지
+      this.splice(index, 1);
+    }
+  });
+};
+
+arr.remove3();
+
+console.log(arr); //[1,2]
